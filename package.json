@@ -1,0 +1,91 @@
+{
+  "name": "js-slot-machine",
+  "version": "0.1.0",
+  "homepage": "https://Dede182.github.io",
+  "private": true,
+  "dependencies": {
+    "craco": "^0.0.3",
+    "gh-pages": "^4.0.0",
+    "gsap": "^3.10.4",
+    "i18next": "^21.8.8",
+    "nanoid": "^3.3.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-i18next": "^11.17.0",
+    "react-redux": "^8.0.2",
+    "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.2.0",
+    "typescript": "^4.7.3",
+    "workbox-background-sync": "^6.5.3",
+    "workbox-broadcast-update": "^6.5.3",
+    "workbox-cacheable-response": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-expiration": "^6.5.3",
+    "workbox-google-analytics": "^6.5.3",
+    "workbox-navigation-preload": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-range-requests": "^6.5.3",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3",
+    "workbox-streams": "^6.5.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "lint": "eslint --max-warnings=0 src",
+    "validate-ts": "tsc --project ./tsconfig.json",
+    "test:unit": "craco test -u",
+    "test:unit-coverage": "yarn test:unit --watchAll --env=jsdom --coverage",
+    "test:e2e": "cypress open",
+    "gen-scss-types": "typed-scss-modules src --additionalData \"@import './assets/styles/_index.scss';\" --nameFormat none --exportType default",
+    "deploy": "gh-pages -d build",
+    "worker": "webpack --watch",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@cypress/react": "^5.12.5",
+    "@cypress/webpack-dev-server": "^1.8.4",
+    "@cypress/webpack-preprocessor": "^5.12.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^17.0.40",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-transition-group": "^4.4.4",
+    "cypress": "^9.5.4",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "ts-jest": "^28.0.4",
+    "ts-loader": "^9.3.0",
+    "typed-scss-modules": "^6.5.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "cracoConfig": "craco.config.js",
+  "jest": {
+    "moduleNameMapper": {
+      "^@/(.+)": "<rootDir>/src/$1"
+    }
+  }
+}

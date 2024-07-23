@@ -1,0 +1,35 @@
+.slot-machine {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 120%;
+  margin: auto;
+  width: max-content;
+  margin: 0.5rem auto 1rem;
+  padding: 0 0.5rem;
+  background-image: url('/assets/images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: $xs) {
+  .slot-machine {
+    max-width: 49rem;
+    margin: auto;
+    width: 38rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    // background-color: var(--color-secondary);
+    background-image: url('/assets/images/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0.3rem 0.3rem 0.625rem rgba($color-black, 0.7);
+  }
+}

@@ -40,3 +40,9 @@ If you have any questions or feedback, feel free to reach out at [htetshine.coin
 ---
 
 **Note**: This project is for entertainment purposes only and does not involve real money.
+
+
+
+## Credits
+
+- **Images and Icons**: The images and icons used in this project are not my own. They are used with appreciation and credit goes to their original creators.
